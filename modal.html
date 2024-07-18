@@ -4,22 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="modal.css">
-
     <title>Modal</title>
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/modal.js" defer></script>
+
+
 </head>
 
 <body>
-
-    <button class="btnConfig">Clique Aqui</button>
-    <div class="windowModal" id="windowModal">
-        <div class="modal">
-            <h1>
-                windowModal
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste dignissimos laudantium aut alias provident a, voluptas magni, consectetur quidem molestiae, obcaecati voluptatibus dolorem? Error iusto consequuntur earum voluptate velit.
-                </p>
-            </h1>
+    <h1>Modal</h1>
+    <button id="openModal">Clique Aqui</button>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modalHeader">
+            <h2>
+                Configurações
+                <div id="actionButton">
+                <button id="toMark">Marcar Todos</button>
+                <button id="markOff">Desmarcar Todos</button>
+                <button id="toRecord">Gravar</button>
+            </div>
+            </h2>
+            <button id="closeModal">Fechar</button>
+        </div>
+        <div class="modalBody">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste dignissimos laudantium aut
+                alias provident a, voluptas magni, consectetur quidem molestiae, obcaecati voluptatibus dolorem?
+                Error iusto consequuntur earum voluptate velit.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste dignissimos laudantium aut
+                alias provident a, voluptas magni, consectetur quidem molestiae, obcaecati voluptatibus dolorem?
+                Error iusto consequuntur earum voluptate velit.
+            </p>
         </div>
     </div>
 
