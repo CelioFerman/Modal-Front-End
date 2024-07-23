@@ -1,45 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Modal</title>
-    <link rel="stylesheet" href="css/modal.css">
-    <script src="js/modal.js" defer></script>
+    <link rel='stylesheet' href='css/modal.css'>
+    <script src='js/modal.js' defer></script>
 
 
 </head>
 
 <body>
     <h1>Modal</h1>
-    <button id="openModal">Clique Aqui</button>
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-        <div class="modalHeader">
-            <h2>
-                Configurações
-                <div id="actionButton">
-                <button id="toMark">Marcar Todos</button>
-                <button id="markOff">Desmarcar Todos</button>
-                <button id="toRecord">Gravar</button>
+    <button id='openModal'>Clique Aqui</button>
+    <div id='modal' class='hide'>
+        <div id='fade' class='hide'></div>
+        <div class='modalHeader'>
+            <h2>Configurações</h2>
+            <button id='closeModal'>Fechar</button>
+        </div>
+        <div id='actionButton'>
+            <button id='toMark'>Marcar Todos</button>
+            <button id='markOff'>Desmarcar Todos</button>
+            <button id='toRecord'>Gravar</button>
+        </div>
+
+        <div class='modalBody'>
+            <div>
+                <input type="checkbox" id="checkbox" value="veiculo">
+                <label for="veuculo">Veículo</label>
+                <div>
+                    <input type="checkbox" id="checkbox" value="Ignição e Bloqueio">
+                    <label for="Ignição e Bloqueio">Ignição e Bloqueio</label>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="placa, odoometro e horimetro">Placa, Odoômetro e Horimetro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" value="status">
+                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
+                    </div>
+
+                </div>
             </div>
-            </h2>
-            <button id="closeModal">Fechar</button>
-        </div>
-        <div class="modalBody">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste dignissimos laudantium aut
-                alias provident a, voluptas magni, consectetur quidem molestiae, obcaecati voluptatibus dolorem?
-                Error iusto consequuntur earum voluptate velit.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste dignissimos laudantium aut
-                alias provident a, voluptas magni, consectetur quidem molestiae, obcaecati voluptatibus dolorem?
-                Error iusto consequuntur earum voluptate velit.
-            </p>
-        </div>
-    </div>
 
 </body>
 
