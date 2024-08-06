@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     padding: 1rem;
 }
@@ -26,7 +28,7 @@ button {
 }
 
 #toRecord {
-    background-color: rgb(57, 221, 25);=
+    background-color: rgb(57, 221, 25);
 }
 #markOff {
     background-color: rgb(255, 0, 0);
@@ -78,9 +80,12 @@ button:hover {
     padding-bottom: 1rem;
 }
 
-.modalBody p {
-    margin-bottom: 1rem;
+.modalBody {
+    padding: 1rem;
+    max-height: 700px;
+    overflow-y: scroll;
 }
+
 
 #modal.hide,
 #fade.hide {

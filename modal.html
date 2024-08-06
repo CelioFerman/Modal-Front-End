@@ -6,74 +6,292 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Modal</title>
     <link rel='stylesheet' href='css/modal.css'>
+    <link rel="stylesheet" href="node_modules/bootstrap/scss/_alert.scss">
     <script src='js/modal.js' defer></script>
-
-
 </head>
 
 <body>
-    <h1>Modal</h1>
-    <button id='openModal'>Clique Aqui</button>
-    <div id='modal' class='hide'>
-        <div id='fade' class='hide'></div>
-        <div class='modalHeader'>
-            <h2>Configurações</h2>
-            <button id='closeModal'>Fechar</button>
-        </div>
-        <div id='actionButton'>
-            <button id='toMark'>Marcar Todos</button>
-            <button id='markOff'>Desmarcar Todos</button>
-            <button id='toRecord'>Gravar</button>
-        </div>
-
-        <div class='modalBody'>
-            <div>
-                <input type="checkbox" id="checkbox" value="veiculo">
-                <label for="veuculo">Veículo</label>
-                <div>
-                    <input type="checkbox" id="checkbox" value="Ignição e Bloqueio">
-                    <label for="Ignição e Bloqueio">Ignição e Bloqueio</label>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="placa, odoometro e horimetro">Placa, Odoômetro e Horimetro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="checkbox" value="status">
-                        <label for="status de conexão e alimentação">Status de Conexão e Alimentação</label>
-                    </div>
-
-                </div>
+    <modal>
+        <h1>Modal</h1>
+        <button id='openModal' >Clique Aqui</button>
+        <div id='modal' class='hide'>
+            <div id='fade' class='hide'></div>
+            <div class='modalHeader'>
+                <h2>Configurações</h2>
+                <button id='closeModal'>Fechar</button>
             </div>
+            <div id='actionButton'>
+                <button id='toMark'>Marcar Todos</button>
+                <button id='markOff'>Desmarcar Todos</button>
+                <button id='toRecord'>Gravar</button>
+            </div>
+            <div class='modalBody' >
+                <div>
+                    <input type="checkbox" class="checkbox">
+                    <label>Veículo</label>
+                    <div>
+                        <input type="checkbox" class="checkbox">
+                        <label>Ignição e Bloqueio</label>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status de Conexão e Alimentação</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Placa, Odoômetro e Horimetro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Motorista</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Velocidade e Tempo Parado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Sensores</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Localização e Ultima Atualização</label>
+                        </div>
 
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Capacidade de Peso</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Capacidade Volume</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Condutor</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>KM/L</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>L/h</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Latitude</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Longitude</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Placa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Data Hora Pânico</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Ignição</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Pânico</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>idVeiculo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Código Módulo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Marca</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Modelo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Tipo Veículo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Divisão Veículo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Velocidade Atual</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Data Ultima Transmissão</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Data Ultima Atualização</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Tempo Sem Transmissão</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Tempo Parado Em Minutos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Desatualizado ?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Desatualizado ?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Orientação</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Possui Bloqueio</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Conexão</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Está Bloqueado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Ultimo Odômetro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Ultimo Hodômetro BKP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Ultimo Horimetro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Ultimo Horimetro BKP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Label</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Possui Teclado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Possui Saida 2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Possui Saida 3</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Leitura Sensor</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Sensor RS232 Instalado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Avisar Veiculo Ligado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Avisar Veiculo Desligado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Ancoragem</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Ultima Voltagem</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Sem Alimentação Externa ?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Nivel Bateria Modulo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Nivel Bateria Modulo BKP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Sensor Entrada 1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Sensor Entrada 2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Sensor Entrada 3</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Entrada 1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Entrada 2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Entrada 3</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Entrada 4</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Saida 1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Saida 2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Status Saida 3</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Cor Veiculo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Ultimo RPM</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label>Localização</label>
+                        </div>
+                    </div>
+                </div>
+    </modal>
 </body>
 
 </html>
